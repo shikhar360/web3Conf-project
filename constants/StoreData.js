@@ -2,8 +2,13 @@ import { Web3Storage } from "web3.storage";
 import { tokenKey } from "./constant";
 
 
+function GetAccessToken() {
+  
+  return tokenKey;
+}
+
 function MakeStorageClient() {
-  return new Web3Storage({ token: tokenKey });
+  return new Web3Storage({ token: GetAccessToken() });
 }
 
 export const StoreData = async (files) => {
