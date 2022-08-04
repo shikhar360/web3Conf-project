@@ -1,5 +1,7 @@
 // require("dotenv").config();
 
+export const tokenKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDUyMEU2MDEwNjA5RDJFOTc3MUFiOGY0MWRiYjYyOWE3ZjE3Njk0MDAiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NTkzNjY0Mjk3NTQsIm5hbWUiOiJIZWFsdGggRGFwcCJ9.8PYDyndYUGog_3OB6bTmCMYuwL_MevAD2Dkfpx018AU"
+
 export const contractAddress = "0xAde37a071466E65934F53e2eF2066592CEf982eE";
 
 export const abi = [

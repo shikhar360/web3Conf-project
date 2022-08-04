@@ -1,7 +1,9 @@
 import { Web3Storage } from "web3.storage";
+import { tokenKey } from "./constant";
+
 
 function MakeStorageClient() {
-  return new Web3Storage({ token: process.env.NEXT_PUBLIC_WEB3STORAGE_TOKEN });
+  return new Web3Storage({ token: tokenKey });
 }
 
 export const StoreData = async (files) => {
