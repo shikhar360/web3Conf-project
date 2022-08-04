@@ -60,27 +60,28 @@ export default function Docs() {
     }
   }
 
-  async function getselfInfo() {
-    try {
-      const getinfo = await contract.selfInfo();
-
-      setInfo({
-        name: getinfo.name,
-        age: getinfo.age.toString(),
-        sex: getinfo.sex,
-        location: getinfo.location,
-        id: getinfo.id.toString(),
-        addr: getinfo.addr,
-        docs: getinfo.docs,
-      });
-
-      await getDocs();
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  
 
   useEffect(() => {
+    async function getselfInfo() {
+      try {
+        const getinfo = await contract.selfInfo();
+  
+        setInfo({
+          name: getinfo.name,
+          age: getinfo.age.toString(),
+          sex: getinfo.sex,
+          location: getinfo.location,
+          id: getinfo.id.toString(),
+          addr: getinfo.addr,
+          docs: getinfo.docs,
+        });
+  
+       getDocs();
+      } catch (err) {
+        console.log(err);
+      }
+    }
     getselfInfo();
   }, [isConnected]);
 

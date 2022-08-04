@@ -18,26 +18,27 @@ export default function Home() {
     signerOrProvider: signer || provider,
   });
 
-  async function redirectIfRegistered() {
-    try {
-      const gettingPatientInfo = await contract.getPatientsInfo();
-
-      let cleanedArr = [];
-      gettingPatientInfo.forEach((itm) => {
-        cleanedArr.push(itm.addr);
-      });
-
-      const finded = cleanedArr.some((addr) => addr == address);
-
-      if (finded && isConnected) {
-        Router.push("/Docs");
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  
 
   useEffect(() => {
+    async function redirectIfRegistered() {
+      try {
+        const gettingPatientInfo = await contract.getPatientsInfo();
+  
+        let cleanedArr = [];
+        gettingPatientInfo.forEach((itm) => {
+          cleanedArr.push(itm.addr);
+        });
+  
+        const finded = cleanedArr.some((addr) => addr == address);
+  
+        if (finded && isConnected) {
+          Router.push("/Docs");
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    }
     redirectIfRegistered();
   }, [isConnected]);
 
