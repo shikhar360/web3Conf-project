@@ -1,14 +1,17 @@
 import { Web3Storage } from "web3.storage";
-import { tokenKey } from "./constant";
+// import { tokenKey } from "./constant";
 
-
-function GetAccessToken() {
+// function GetAccessToken() {
+//  
+//   return process.env.NEXT_PUBLIC_WEB3STORAGE_TOKEN;
+// }
+// function GetAccessToken() {
   
-  return tokenKey;
-}
+//   return tokenKey;
+// }
 
 function MakeStorageClient() {
-  return new Web3Storage({ token: GetAccessToken() });
+  return new Web3Storage({ token: process.env.NEXT_PUBLIC_WEB3STORAGE_TOKEN });
 }
 
 export const StoreData = async (files) => {
@@ -24,8 +27,7 @@ export const StoreData = async (files) => {
 
 
 // function GetAccessToken() {
-//   console.log(web3storage_key);
-//   console.log(process.env.NEXT_PUBLIC_WEB3STORAGE_TOKEN);
+//  
 //   return process.env.NEXT_PUBLIC_WEB3STORAGE_TOKEN;
 // }
 
