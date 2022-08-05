@@ -83,6 +83,10 @@ The smartcontract is deployed to the testnet using the ALCHEMY api.
 
 
 
+![load2](https://user-images.githubusercontent.com/98407930/183025715-1370fefb-2d90-4bbf-9d29-d51d9dd9e60e.png)
+
+
+
 ## How To Get Started ?? 🍀
 
 First, run the development server:
