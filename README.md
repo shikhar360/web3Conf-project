@@ -20,6 +20,9 @@ On docs page there you will see the side modal which you can close if you want .
 precious data , You can also delete your data if you want . You will have the full power to control your data and guss what it is secured with blockchain 
 technology means no one (including government and the site owner itself) cant delete your data . (Thats cool 😎 right?)
 
+#### NOTE: To see the backend files visit [here](https://github.com/shikhar360/web3Conf-project/tree/3178b386d943d263ed97cad9e66a9d821799c3cd/contract(backendFiles))
+or you can simply got to the Contract(backendFiles) in the above folder
+
 
 ## Technologies Used 🔱
 
@@ -29,6 +32,10 @@ For storage to the Patients Data web3.storage is been used . The document that i
 After uploading we get the CID by which i have made a link dynamically using template literals and fetched that in the frontend . 
 
 #### Links to the files where Ipfs is been used :
+[Link to the StoreData function](https://github.com/shikhar360/web3Conf-project/blob/3178b386d943d263ed97cad9e66a9d821799c3cd/constants/StoreData.js)
+
+[Line 112 ( sendToIpfs function) (where it is actually used) ](https://github.com/shikhar360/web3Conf-project/blob/3178b386d943d263ed97cad9e66a9d821799c3cd/pages/Docs.js)
+
 
 <b>RainbowKit</b>
 
@@ -43,16 +50,21 @@ Next js framework is known for its SSR(server side rendring) capability thats wh
 Tailwindcss have made the work soo much faster and easy that also saved a lot of time .
 
 <b>Wagmi</b>
+
 Contract interaction is been done using the a newly founded library named wagmi . 
+
+<b>Hardhat</b>
+
+Hardhat is the framework where the smartcontract is been made using the solidity language.
+
+<b>Alchemy</b>
+
+The smartcontract is deployed to the testnet using the ALCHEMY api.
 
 
 ## Contract Address
 
-
-
-
-
-
+[Goerli EtherScan](https://goerli.etherscan.io/address/0xAde37a071466E65934F53e2eF2066592CEf982eE)
 
 
 
