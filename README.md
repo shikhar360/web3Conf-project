@@ -18,7 +18,8 @@ The next time you are visiting the page you dont have to do anything (you will b
 
 On docs page there you will see the side modal which you can close if you want . There you will see your info and the options of uploading your 
 precious data , You can also delete your data if you want . You will have the full power to control your data and guss what it is secured with blockchain 
-technology means no one (including government and the site owner itself) cant delete your data . (Thats cool 😎 right?)
+technology means no one (including government and the site owner itself) cant delete your data . (Thats cool 😎 right?) You can also update your details if you 
+have made any typo😅
 
 #### NOTE: To see the backend files visit [here](https://github.com/shikhar360/web3Conf-project/tree/3178b386d943d263ed97cad9e66a9d821799c3cd/contract(backendFiles))
 or you can simply got to the Contract(backendFiles) in the above folder
@@ -71,9 +72,13 @@ The smartcontract is deployed to the testnet using the ALCHEMY api.
 
 ## Snips
 
+![land2](https://user-images.githubusercontent.com/98407930/183024887-1a5c5924-2901-46dd-92cd-e9904e6a0c10.png)
 
+![reg](https://user-images.githubusercontent.com/98407930/183024905-2df12081-cdce-4dfa-a895-fb88a831a865.png)
 
+![load](https://user-images.githubusercontent.com/98407930/183024925-e2f862e8-77dd-4345-8b5a-38ee46ed960e.png)
 
+![docs](https://user-images.githubusercontent.com/98407930/183024951-f69602b1-756c-4e73-8b74-decb358064c8.png)
 
 
 
